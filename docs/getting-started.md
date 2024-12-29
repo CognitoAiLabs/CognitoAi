@@ -11,7 +11,7 @@ This guide will help you get started with Cognito, a framework for running AI ag
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/CognitoAiLabs/CognitoAi.git
 cd cognito
 ```
 
