@@ -1,0 +1,26 @@
+{
+  "name": "cognito-experiments",
+  "version": "1.0.0",
+  "description": "Cognito Experiments Framework",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.0",
+    "inquirer": "^8.2.5",
+    "openai": "^4.0.0",
+    "typescript": "^4.9.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^16.0.0",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1"
+  }
+}
