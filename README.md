@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Cognito Banner](docs/assets/Bannerv2.png) *(Note: Add your logo here)*
+![Cognito Banner](docs/assets/Bannerv2.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.0-blue.svg)](https://www.typescriptlang.org/)
