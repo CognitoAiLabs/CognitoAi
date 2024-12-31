@@ -138,41 +138,54 @@ export class OpenAIService {
   }
 
   async analyzeConversation(messages: Message[]): Promise<ChatAnalytics> {
-    const systemPrompt = `Analyze the following conversation and provide a detailed analysis in this exact JSON format:
+    const uniqueAgents = [...new Set(messages.map(m => m.agentName))];
+    const systemPrompt = `As an expert conversation analyst, analyze this multi-agent dialogue comprehensively.
+
+    CRITICAL REQUIREMENTS:
+    1. You MUST analyze EVERY agent in the conversation: ${uniqueAgents.join(', ')}
+    2. All numeric scores MUST be between 0-100 and follow these criteria:
+       - Adaptability: ability to adjust to new information and perspectives
+       - Idea Diversity: uniqueness and variety of concepts introduced
+       - Conversation Depth: complexity and sophistication of discussion
+       - Emotional Intelligence: awareness and appropriate emotional responses
+       - Logical Consistency: coherence and rational progression of ideas
+       - Creativity: novel approaches and innovative thinking
+
+    Format your response EXACTLY as this JSON structure:
     {
-      "mainTopics": ["Key topic 1", "Key topic 2"],
+      "mainTopics": ["specific topic 1", "specific topic 2"],
       "agentBehaviorAnalysis": {
-        "Agent Name 1": {
-          "cognitivePatterns": "Analysis of thinking patterns",
-          "emotionalResponses": "Patterns in emotional reactions",
-          "biasesObserved": ["Bias 1", "Bias 2"],
-          "adaptabilityScore": 85,
-          "consistencyWithRole": "Role consistency analysis",
-          "uniqueCharacteristics": ["Trait 1", "Trait 2"]
+        "[EACH_AGENT_NAME]": {
+          "cognitivePatterns": "detailed analysis of thinking and reasoning patterns",
+          "emotionalResponses": "analysis of emotional intelligence and reactions",
+          "biasesObserved": ["specific bias 1", "specific bias 2"],
+          "adaptabilityScore": "0-100 based on flexibility and response to new ideas",
+          "consistencyWithRole": "how well they maintained their character",
+          "uniqueCharacteristics": ["specific trait 1", "specific trait 2"]
         }
       },
       "interactionDynamics": {
-        "powerDynamics": "Analysis of hierarchical patterns",
-        "influencePatterns": ["Pattern 1", "Pattern 2"],
-        "groupPolarization": "Polarization analysis",
-        "cognitiveAlignment": "Alignment analysis"
+        "powerDynamics": "analysis of influence and authority patterns",
+        "influencePatterns": ["specific pattern 1", "specific pattern 2"],
+        "groupPolarization": "analysis of opinion shifts and group thinking",
+        "cognitiveAlignment": "analysis of shared understanding development"
       },
       "experimentMetrics": {
-        "ideaDiversity": 85,
-        "conversationDepth": 75,
-        "emotionalIntelligence": 90,
-        "logicalConsistency": 88,
-        "creativityScore": 82
+        "ideaDiversity": "0-100 based on variety and uniqueness of ideas",
+        "conversationDepth": "0-100 based on complexity and sophistication",
+        "emotionalIntelligence": "0-100 based on emotional awareness and response",
+        "logicalConsistency": "0-100 based on coherence and rationality",
+        "creativityScore": "0-100 based on innovation and novel thinking"
       },
-      "emergentBehaviors": ["Behavior 1", "Behavior 2"],
-      "researchImplications": ["Implication 1", "Implication 2"],
+      "emergentBehaviors": ["specific behavior 1", "specific behavior 2"],
+      "researchImplications": ["specific implication 1", "specific implication 2"],
       "summary": {
-        "mainConclusions": ["Conclusion 1", "Conclusion 2"],
-        "keyDiscussionPoints": ["Point 1", "Point 2"],
-        "agreements": ["Agreement 1", "Agreement 2"],
-        "disagreements": ["Disagreement 1", "Disagreement 2"],
-        "overallTone": "Description of conversation tone",
-        "suggestedNextTopics": ["Topic 1", "Topic 2"]
+        "mainConclusions": ["specific conclusion 1", "specific conclusion 2"],
+        "keyDiscussionPoints": ["specific point 1", "specific point 2"],
+        "agreements": ["specific agreement 1", "specific agreement 2"],
+        "disagreements": ["specific disagreement 1", "specific disagreement 2"],
+        "overallTone": "detailed analysis of conversation tone",
+        "suggestedNextTopics": ["specific topic 1", "specific topic 2"]
       }
     }
 
