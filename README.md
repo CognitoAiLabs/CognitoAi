@@ -114,14 +114,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The AI research community
 - All contributors and supporters
 
-## Support
-
-- [Report Issues](https://github.com/CognitoAiLabs/CognitoAi/issues)
-- [Request Features](https://github.com/CognitoAiLabs/CognitoAi/issues)
-- [Project Wiki](https://github.com/CognitoAiLabs/CognitoAi/wiki)
-
 ## Contact
 
-- Twitter: [@cognitoai_](https://x.com/cognitoai_)
-- Website: [cognitoai.tech](https://cognitoai.tech)
+- Twitter: [@Cognitoai_](https://x.com/Cognitoai_)
+- Website: [www.cognitoailabs.com](https://www.cognitoailabs.com)
+- Documentation: [docs.cognitoailabs.com](https://docs.cognitoailabs.com)
+- Telegram: [t.me/Cognitoaiportal](https://t.me/Cognitoaiportal)
 - Project Link: [https://github.com/CognitoAiLabs/CognitoAi](https://github.com/CognitoAiLabs/CognitoAi) 
