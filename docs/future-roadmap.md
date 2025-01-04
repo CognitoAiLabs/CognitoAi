@@ -7,8 +7,8 @@ This document outlines potential future enhancements and expansions for the Cogn
 ### Phase 0: Foundation
 - OpenSource Repository Publication (http://github.com/CognitoAiLabs/CognitoAi)
 - Functional Website App (http://cognitoailabs.com)
-- Documentation Portal (http://docs.cognitoailabs.com)
-- Community Channel (http://t.me/cognitoailabs)
+- Documentation (http://docs.cognitoailabs.com)
+- Telegram Channel (http://t.me/cognitoailabs)
 - X Community Launch (http://x.com/i/communities/1875403744231190667)
 - Token Launch
 
