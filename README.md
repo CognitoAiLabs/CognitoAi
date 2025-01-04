@@ -116,8 +116,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-- Twitter: [@Cognitoai_](https://x.com/Cognitoai_)
-- Website: [www.cognitoailabs.com](https://www.cognitoailabs.com)
-- Documentation: [docs.cognitoailabs.com](https://docs.cognitoailabs.com)
-- Telegram: [t.me/Cognitoaiportal](https://t.me/Cognitoaiportal)
-- Project Link: [https://github.com/CognitoAiLabs/CognitoAi](https://github.com/CognitoAiLabs/CognitoAi) 
+- Twitter: [@cognitoailabs](http://x.com/cognitoailabs)
+- Website: [cognitoailabs.com](http://cognitoailabs.com)
+- Documentation: [docs.cognitoailabs.com](http://docs.cognitoailabs.com)
+- Telegram: [t.me/cognitoailabs](http://t.me/cognitoailabs)
+- Project Link: [github.com/CognitoAiLabs/CognitoAi](http://github.com/CognitoAiLabs/CognitoAi) 

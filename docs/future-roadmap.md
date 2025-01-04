@@ -5,10 +5,11 @@ This document outlines potential future enhancements and expansions for the Cogn
 ## Implementation Timeline
 
 ### Phase 0: Foundation
-- OpenSource Repository Publication (github.com/CognitoAiLabs/CognitoAi)
-- Functional Website App (www.cognitoailabs.com)
-- Documentation Portal (docs.cognitoailabs.com)
-- Community Channel (t.me/Cognitoaiportal)
+- OpenSource Repository Publication (http://github.com/CognitoAiLabs/CognitoAi)
+- Functional Website App (http://cognitoailabs.com)
+- Documentation Portal (http://docs.cognitoailabs.com)
+- Community Channel (http://t.me/cognitoailabs)
+- X Community Launch (http://x.com/i/communities/1875403744231190667)
 - Token Launch
 
 ### Phase 1
