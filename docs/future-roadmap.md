@@ -18,8 +18,8 @@ This document outlines potential future enhancements and expansions for the Cogn
 - Enhanced analytics
 
 ### Phase 2
-- Commercial platform
-- Marketplace development
+- Dataset Ecosystem Development
+- Visualization Improvement 
 - Advanced experiment controls
 
 ### Phase 3
