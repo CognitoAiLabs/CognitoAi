@@ -12,7 +12,7 @@ interface ChatSession {
 }
 
 export class StorageService {
-  private readonly storageDir = path.join(process.cwd(), 'chat-sessions');
+  private readonly storageDir = path.join(process.cwd(), 'experiments');
 
   constructor() {
     this.initializeStorage();
@@ -27,7 +27,7 @@ export class StorageService {
   }
 
   async saveSession(session: Omit<ChatSession, 'id'>): Promise<string> {
-    const sessionId = `session_${Date.now()}`;
+    const sessionId = `experiment_${Date.now()}`;
     const fullSession: ChatSession = {
       id: sessionId,
       ...session

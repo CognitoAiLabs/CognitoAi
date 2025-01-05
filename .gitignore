@@ -38,7 +38,7 @@ tmp/
 temp/
 
 # Chat sessions
-chat-sessions/*.json
+experiments/*.json
 
 # TypeScript
 *.tsbuildinfo

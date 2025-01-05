@@ -18,16 +18,17 @@ async function main() {
   console.clear();
   console.log(chalk.white('Welcome to AI Agents Chat Room!\n'));
 
-  const { reusePreviousAgents } = await inquirer.prompt([{
-    type: 'confirm',
-    name: 'reusePreviousAgents',
-    message: 'Would you like to use agents from a previous conversation?',
-    default: false
-  }]);
+  const sessions = await storageService.getAllSessions();
+  
+  if (sessions.length > 0) {
+    const { reusePreviousAgents } = await inquirer.prompt([{
+      type: 'confirm',
+      name: 'reusePreviousAgents',
+      message: 'Would you like to use agents from a previous conversation?',
+      default: false
+    }]);
 
-  if (reusePreviousAgents) {
-    const sessions = await storageService.getAllSessions();
-    if (sessions.length > 0) {
+    if (reusePreviousAgents) {
       const { sessionChoice } = await inquirer.prompt([{
         type: 'list',
         name: 'sessionChoice',
