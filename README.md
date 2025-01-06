@@ -50,7 +50,7 @@ Cognito is an experimental framework designed for studying and analyzing interac
 1. Clone the repository:
 ```bash
 git clone https://github.com/CognitoAiLabs/CognitoAi.git
-cd cognito
+cd CognitoAi
 ```
 
 2. Install dependencies:
